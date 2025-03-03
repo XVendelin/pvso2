@@ -7,3 +7,6 @@ Následne sme nasnímali 20 fotografií šachovnice s rozmerom 7x5 políčok.
 V zadaní nám bol poskytnutý kód na kalibráciu kamery. Do neho sme si zadali rozmery našej šachovnice a spustili ho.
 Program nám vypísal maticu vnútorných parametrov a tak sme zistili fx,fy,cx,cy.
 
+2.)
+
+3.) Vytvorli sme si GitHun repozitár a do neho nahrali obrázky a program.
