@@ -63,7 +63,7 @@ while True:
                 cv.circle(output, (x, y), 2, (0, 0, 255), 3)  # Draw center
 
                 # Display the radius as text near the detected circle
-                cv.putText(output, f'r-: {radius}', (x - 20, y - 10),
+                cv.putText(output, f'r: {radius}', (x - 20, y - 10),
                            cv.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
 
     # Show the processed frame
