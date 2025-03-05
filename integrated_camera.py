@@ -58,8 +58,13 @@ while True:
         if circles is not None:
             circles = np.uint16(np.around(circles))
             for i in circles[0, :]:
-                cv.circle(output, (i[0], i[1]), i[2], (0, 255, 0), 2)  # Draw outer circle
-                cv.circle(output, (i[0], i[1]), 2, (0, 0, 255), 3)  # Draw center
+                x, y, radius = i
+                cv.circle(output, (x, y), radius, (0, 255, 0), 2)  # Draw outer circle
+                cv.circle(output, (x, y), 2, (0, 0, 255), 3)  # Draw center
+
+                # Display the radius as text near the detected circle
+                cv.putText(output, f'r-: {radius}', (x - 20, y - 10),
+                           cv.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
 
     # Show the processed frame
     cv.imshow('img', output)
