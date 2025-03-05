@@ -8,5 +8,9 @@ V zadaní nám bol poskytnutý kód na kalibráciu kamery. Do neho sme si zadali
 Program nám vypísal maticu vnútorných parametrov a tak sme zistili fx,fy,cx,cy.
 
 2.)
+Vytvorili sme program na detekciu kružníc, ktorý kontinuálne sníma obraz.
+V obraze používame slidre na úpravu parametrov pre detekciu hrán, minima detegovaných hrán, minimálneho a maximálneho polomeru vypísaných kružníc na obrázku.
+Kružnice sa detegujú na grayscale obraze a vypisujú na RGB obrázok.
+Pridali sme vypisovanie polomeru vykreslených kružníc na obrázku.
 
 3.) Vytvorli sme si GitHun repozitár a do neho nahrali obrázky a program.
