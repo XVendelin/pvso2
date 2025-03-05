@@ -22,8 +22,9 @@ cv.namedWindow('img')
 
 # Create trackbars
 cv.createTrackbar('param1', 'img', 50, 100, nothing)
-cv.createTrackbar('param2', 'img', 30, 100, nothing)
-cv.createTrackbar('radius', 'img', 1, 100, nothing)
+cv.createTrackbar('param2', 'img', 50, 100, nothing)
+cv.createTrackbar('radius_min', 'img', 1, 100, nothing)
+cv.createTrackbar('radius_max', 'img', 100, 100, nothing)
 switch = '0 : OFF \n1 : ON'
 cv.createTrackbar(switch, 'img', 1, 1, nothing)
 
@@ -43,7 +44,8 @@ while True:
     # Read trackbar positions
     p1 = cv.getTrackbarPos('param1', 'img')
     p2 = cv.getTrackbarPos('param2', 'img')
-    r = cv.getTrackbarPos('radius', 'img')
+    rmin = cv.getTrackbarPos('radius_min', 'img')
+    rmax = cv.getTrackbarPos('radius_max', 'img')
     s = cv.getTrackbarPos(switch, 'img')
 
     # Create a copy for output
@@ -51,7 +53,7 @@ while True:
 
     if s == 1:
         # Detect circles
-        circles = cv.HoughCircles(gray, cv.HOUGH_GRADIENT, 1, 20, param1=p1, param2=p2, minRadius=r, maxRadius=100)
+        circles = cv.HoughCircles(gray, cv.HOUGH_GRADIENT, 1, 20, param1=p1, param2=p2, minRadius=rmin, maxRadius=rmax)
 
         if circles is not None:
             circles = np.uint16(np.around(circles))
