@@ -13,4 +13,4 @@ V obraze používame slidre na úpravu parametrov pre detekciu hrán, minima det
 Kružnice sa detegujú na grayscale obraze a vypisujú na RGB obrázok.
 Pridali sme vypisovanie polomeru vykreslených kružníc na obrázku.
 
-3.) Vytvorli sme si GitHun repozitár a do neho nahrali obrázky a program.
+3.) Vytvorli sme si GitHub repozitár a do neho nahrali obrázky a program.
