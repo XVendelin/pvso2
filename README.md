@@ -12,7 +12,6 @@ Sú špecifické pre konkrétnu kameru (ohnisková vzdialenosť a stred snímky)
 ![image](https://github.com/user-attachments/assets/6e5ff4e5-dfc9-4250-b020-ffc89d50316d)
   
 	ohnisková vzdialenosť - fx,fy
-  
 	stred snímky - cx,cy
 
 Vonkajšie:
