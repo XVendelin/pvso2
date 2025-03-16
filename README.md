@@ -21,7 +21,7 @@ Predstavujú rotačné a translačné vektory, ktoré umožňujú transformáciu
 
 	– r - rotácia kamery
  	– t - translácia kamery
-Kalibrácia sa musí vykonať na čiernobielych obrázkoch preto sme museli farebné obrázky zmeniť na čiernobiele. Spravili sme kalibráciu a výsledkom kalibrácie boli nasledujúce paramete:
+Kalibrácia sa musí vykonať na obrázkoch v šedých odtieňpch preto sme museli farebné obrázky zmeniť na čiernobiele. Spravili sme kalibráciu a výsledkom kalibrácie boli nasledujúce paramete:
 
 	- mtx - matica vnútorných parametrov
 	- dist - distortion coefficients
@@ -30,9 +30,24 @@ Kalibrácia sa musí vykonať na čiernobielych obrázkoch preto sme museli fare
 Tieto parametre sme si uložili do textového súboru.
 
 3.)
-Vytvorili sme program na detekciu kružníc, ktorý kontinuálne sníma obraz.
-V obraze používame slidre na úpravu parametrov pre detekciu hrán, minima detegovaných hrán, minimálneho a maximálneho polomeru vypísaných kružníc na obrázku.
-Kružnice sa detegujú na grayscale obraze a vypisujú na RGB obrázok.
-Pridali sme vypisovanie polomeru vykreslených kružníc na obrázku.
+Vytvorili sme program na detekciu kružníc používajúci Houghovu transformáciu, ktorý kontinuálne sníma obraz.
+V obraze používame slidre na úpravu parametrov, umožňujú dynamickú zmenu parametrov detekcie kruhov:
+
+	param1 – Prvý parameter Houghovho detekčného algoritmu (prah pre detekciu hrán)
+	param2 – Druhý parameter Houghovho detekčného algoritmu (prah pre rozhodnutie, či nájdený kruh je platný)
+	radius – Minimálny polomer detegovaných kruhov
+	switch – Prepínač na zapnutie/vypnutie detekcie (ON/OFF)
+
+Náš program beži v nekonečnej slučke až do momentu kedy je stlačený medzerník (vtedy sa vypne)
+	
+ 	1) Program získava obrázok z kamery
+	2) Spracuje ho:
+ 		uráví jeho veľkosť
+		Prevedie ho na odtiene šedej
+		Použije median blur na redukciu šumu
+	3) Získa aktuálne nastavené hodnoty sliderov
+	4) Ak je switch (ON) zapnutý, vykoná detekciu kruhov pomocou cv.HoughCircles()
+ 
+ Výsledný obrázok s kruhmi (+ stred a polomer) sa zobrazí v okne. Obrázok je na rozdiel od odtieňov šedej zobrazovaný v RGB
 
 4.) Vytvorli sme si GitHub repozitár a do neho nahrali obrázky a program.
