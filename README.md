@@ -19,8 +19,15 @@ Predstavujú rotačné a translačné vektory, ktoré umožňujú transformáciu
 
 ![image](https://github.com/user-attachments/assets/d83cced9-a4ae-473b-bc8e-3c498e6b500e)
 
-	– r-rotácia kamery
- 	– t-translácia kamery
+	– r - rotácia kamery
+ 	– t - translácia kamery
+Kalibrácia sa musí vykonať na čiernobielych obrázkoch preto sme museli farebné obrázky zmeniť na čiernobiele. Spravili sme kalibráciu a výsledkom kalibrácie boli nasledujúce paramete:
+
+	- mtx - matica vnútorných parametrov
+	- dist - distortion coefficients
+	- rvecs, tvecs - rotačné a translačné vektory
+
+Tieto parametre sme si uložili do textového súboru.
 
 3.)
 Vytvorili sme program na detekciu kružníc, ktorý kontinuálne sníma obraz.
