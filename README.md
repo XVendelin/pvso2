@@ -7,12 +7,12 @@ Upravili sme si program z prvého zadania aby sme mohli vyhotoviť viacero fotog
 Kameru je nutné nakalibrovať pretože môže nastať skreslenie. Tj napr. rovné čiary sa na krajoch obrázka môžu javiť ako zakrivené alebo niektoré oblasti na obrázku sa môžu javiť bližšie ako v skutočnosti sú. (Ide o radiálne  a tangenciálne skreslenie.
 Preto je potrebné nájsť koeficienty skreslania a parametre kamery (vnútorné a vonkajšie).
 Vnútorné:
-Sú špecifické pre konkrétnu kameru (ohnisková vzdialenosť a optické centrá).
+Sú špecifické pre konkrétnu kameru (ohnisková vzdialenosť a stred snímky). Program v návode nám umožnil vyhlaďať tieto neznáme parametre a následne vytvoriť maticu vnútorných parametrov (uložená na GitHube ako textový dokument).
+
 ![image](https://github.com/user-attachments/assets/6e5ff4e5-dfc9-4250-b020-ffc89d50316d)
 
-
-V zadaní nám bol poskytnutý návod na kalibráciu kamery. Do neho sme si zadali rozmery našej šachovnice a spustili ho.
-Program nám vypísal maticu vnútorných parametrov a tak sme zistili fx,fy,cx,cy.
+ohnisková vzdialenosť - fx,fy
+stred snímky - cx,cy
 
 2.)
 Vytvorili sme program na detekciu kružníc, ktorý kontinuálne sníma obraz.
