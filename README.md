@@ -9,9 +9,9 @@ Preto je potrebné nájsť koeficienty skreslania a parametre kamery (vnútorné
 Vnútorné:
 Sú špecifické pre konkrétnu kameru (ohnisková vzdialenosť a stred snímky). Program v návode nám umožnil vyhlaďať tieto neznáme parametre a následne vytvoriť maticu vnútorných parametrov (uložená na GitHube ako textový dokument).
 
-![image](https://github.com/user-attachments/assets/6e5ff4e5-dfc9-4250-b020-ffc89d50316d)
-ohnisková vzdialenosť - fx,fy
-stred snímky - cx,cy
+  ![image](https://github.com/user-attachments/assets/6e5ff4e5-dfc9-4250-b020-ffc89d50316d)
+  ohnisková vzdialenosť - fx,fy
+  stred snímky - cx,cy
 
 2.)
 Vytvorili sme program na detekciu kružníc, ktorý kontinuálne sníma obraz.
