@@ -30,6 +30,7 @@ Kalibrácia sa musí vykonať na obrázkoch v šedých odtieňpch preto sme muse
 Tieto parametre sme si uložili do textového súboru.
 
 Porovnanie obrázkov pred a po kalibrácií.
+
 ![image](https://github.com/user-attachments/assets/ea85304a-3f7d-42c0-b96d-375ed3d55e94)
 	
  	-ako je možné vidieť šachovnica na obrázku je mierne zakrivená
