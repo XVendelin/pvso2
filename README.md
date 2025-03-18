@@ -29,10 +29,10 @@ Kalibrácia sa musí vykonať na obrázkoch v šedých odtieňpch preto sme muse
 
 Tieto parametre sme si uložili do textového súboru.
 
-	![image](https://github.com/user-attachments/assets/ea85304a-3f7d-42c0-b96d-375ed3d55e94)
+![image](https://github.com/user-attachments/assets/ea85304a-3f7d-42c0-b96d-375ed3d55e94)
 	
  	-ako je možné vidieť šachovnica na obrázku je mierne zakrivená
-	![image](https://github.com/user-attachments/assets/002de30d-0290-4fa0-9629-b7b5a96ac5bc)
+![image](https://github.com/user-attachments/assets/002de30d-0290-4fa0-9629-b7b5a96ac5bc)
 
 	-na tomto obrázku vidime že šachovnica sa nám vyrovnala
 3.)
